@@ -289,4 +289,4 @@ const uniqueChar = (str) => {
     .filter((char, index, arr) => arr.indexOf(char) === index)
     .join();
 };
-console.log(uniqueChar("Allah"));
+// console.log(uniqueChar("Allah"));
