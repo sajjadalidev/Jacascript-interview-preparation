@@ -290,3 +290,29 @@ const uniqueChar = (str) => {
     .join();
 };
 // console.log(uniqueChar("Allah"));
+
+/*
+	1. Implement ES6 into the 'john' {}
+  2. Return value from the 'deduct' () after 2s
+*/
+
+// var john = {
+//   name: "John Doe",
+//   balance: 1500,
+//   deduct: function (amount) {
+//     this.balance = this.balance - amount;
+//     return this.name + " has a balance of " + this.balance;
+//   },
+// };
+
+// Implementation
+const john = {
+  name: "John Doe",
+  balance: 1500,
+  deduct(amount) {
+    this.balance = this.balance - amount;
+    return `${this.name} has a balance of ${this.balance}`;
+  },
+};
+
+// console.log(john.deduct(300));
